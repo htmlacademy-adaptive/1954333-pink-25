@@ -7,281 +7,300 @@
   <base href="https://htmlacademy-adaptive.github.io/1954333-pink-25/3/">
 </head>
 
-<body class="catalog__body">
-  <header class="catalog-header">
-    <a class="catalog-header__logo" href="index.html">
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo">
       <img src="/source/img/icon/pink.svg" width="74" height="23" alt="Pink">
     </a>
-    <nav class="catalog-nav">
-      <button class="catalog-nav__toggle" type="button">
+    <nav class="header-nav">
+      <button class="header-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="catalog-nav__container">
-        <ul class="catalog-nav__list">
-          <li class="catalog-nav__list__item">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="catalog-nav__list__item">
-            <a href="photo.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="catalog-nav__list__item">
-            <a href="#">
-              Конкурс
-            </a>
-          </li>
-          <li class="catalog-nav__list__item">
-            <a href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a href="photo.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#">
+            Конкурс
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a href="https://htmlacademy.ru">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+
     </nav>
   </header>
 
-  <main class="catalog-container">
+  <main class="page__content">
+    <div class="background-header">
+      <h1 class="background-header__title">Фотографии<br>польвателей</h1>
+    </div>
 
-    <h1 class="visually-hidden">Фотогалерея</h1>
-    <h2>Фотографии<br>польвателей</h2>
+    <section class="gallery">
+      <header class="gallery__header">
+        <h3 class="visually-hidden">Фотогалерея</h3>
+        <p class="gallery__slogan">Взгляните на фотографии, которые<br>выкладывают пользователи!<br>
+          Видите, как не хватает ваших?</p>
+      </header>
 
-    <section class="foto">
-      <div class="foto__wrapper">
-        <header class="foto__header">
-          <h3 class="visually-hidden">
-            Фотографии пользователей
-          </h3>
-          <p class="foto__slogan">Взгляните на фотографии, которые<br>выкладывают пользователи!<br>
-            Видите, как не хватает ваших?</p>
-        </header>
+      <ul class="gallery__list gallery__content">
 
-        <ul class="foto__list">
+        <li class="gallery-list__item">
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__panorama">
-
-              <img class="foto foto-item__panorama" src="/source/img/panorama-tablet.jpg" width="320" height="137"
-                alt="фото панорама">
-
-              <div class="foto foto-item-container__panorama-day">
+          <div class="photo-card photo-card--panorama">
+            <div class="photo-card__image">
+              <img src="/source/img/panorama-tablet.jpg" width="320" height="137" alt="panorama">
+              <div class="photo-card__panorama-day">
                 Панорама дня
               </div>
+            </div>
 
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Анна</span>
-                <span class="foto text-container__user-time-ago">(5 минут назад)</span>
+
+            <div class="photo-card__discription">
+              <div class="photo-card__author">Aнна
+                <div class="photo-card__date">(5 минут назад)
+                </div>
               </div>
 
-              <p class="foto text-container__text">Прыгать или нет? Напишите в
-                комментарии свой совет и
-                смотрите прямую трансляцию в
-                перископе, задавайте свои вопросы!
-              </p>
+              <div class="photo-card__title">
+                <p>Прыгать или нет? Напишите в
+                  комментарии свой совет и
+                  смотрите прямую трансляцию в
+                  перископе, задавайте свои вопросы!
+                </p>
+              </div>
 
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
+              <div class="photo-card__likes">
+                <button class="photo-card__button" type="button">
                   <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
+                  <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
                 </button>
 
-                <span class="foto text-container__text-like">Нравится: 215</span>
+                <span class="photo-card__text-like">Нравится: 215</span>
+              </div>
+            </div>
+          </div>
+
+        </li>
+
+        <li class="gallery-list__item">
+
+          <div class="photo-card">
+
+            <div class="photo-card__image">
+              <img src="/source/img/car.jpg" width="280" height="180" alt="car">
+            </div>
+
+            <div class="photo-card__discription">
+              <div class="photo-card__author">Левон
+                <div class="photo-card__date">(5 часов назад)
+                </div>
+              </div>
+
+
+              <div class="photo-card__title">
+                <p>
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </div>
+
+              <div class="photo-card__likes">
+                <button class="photo-card__button" type="button">
+                  <span class="visually-hidden">лайки</span>
+                  <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
+                </button>
+
+                <span class="photo-card__text-like">Нравится: 356</span>
               </div>
 
             </div>
-          </li>
+          </div>
+        </li>
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__white-car">
+        <li class="photo-card">
 
-              <img class="foto foto-item__white-car" src="/source/img/car.jpg" width="280" height="180" alt="фото белая машина">
+          <div class="photo-card__image">
+            <img src="/source/img/drums.jpg" width="280" height="180" alt="drums">
+          </div>
 
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Левон</span>
-                <span class="foto text-container__user-time-ago">(5 часов назад)</span>
+          <div class="photo-card__discription">
+            <div class="photo-card__author">Антон
+              <div class="photo-card__date">(12 часов назад)
               </div>
-
-              <p class="foto text-container__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
-                  <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
-                </button>
-
-                <span class="foto text-container__text-like">Нравится: 356</span>
-              </div>
-
             </div>
-          </li>
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__drum">
-
-              <img class="foto foto-item__drum" src="/source/img/drums.jpg" width="280" height="180" alt="фото барабан">
-
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Антон</span>
-                <span class="foto text-container__user-time-ago">(12 часов назад)</span>
-              </div>
-
-              <p class="foto text-container__text">
+            <div class="photo-card__title">
+              <p>
                 Соседи будут рады!
               </p>
-
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
-                  <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
-                </button>
-
-                <span class="foto text-container__text-like">Нравится: 666</span>
-              </div>
-
             </div>
-          </li>
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__house">
+            <div class="photo-card__likes">
+              <button class="photo-card__button" type="button">
+                <span class="visually-hidden">лайки</span>
+                <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
+              </button>
 
-              <img class="foto foto-item__house" src="/source/img/house.png" width="280" height="180" alt="фото стена дома">
+              <span class="photo-card__text-like">Нравится: 666</span>
+            </div>
 
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Борис</span>
-                <span class="foto text-container__user-time-ago">(20 часов назад)</span>
+          </div>
+        </li>
+
+        <li class="photo-card">
+          <div class="photo-card__image">
+            <img src="/source/img/house.png" width="280" height="180" alt="house">
+          </div>
+
+          <div class="photo-card__discription">
+            <div class="photo-card__author">Борис
+              <div class="photo-card__date">(20 часов назад)
               </div>
+            </div>
 
-              <p class="foto text-container__text">
+            <div class="photo-card__title">
+              <p>
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
-                  <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
-                </button>
-
-                <span class="foto text-container__text-like">Нравится: 215</span>
-              </div>
-
             </div>
-          </li>
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__bahcha">
+            <div class="photo-card__likes">
+              <button class="photo-card__button" type="button">
+                <span class="visually-hidden">лайки</span>
+                <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
+              </button>
 
-              <img class="foto foto-item__bahcha" src="/source/img/bahcha.jpg" width="280" height="180" alt="фото кубанская бахча">
+              <span class="photo-card__text-like">Нравится: 215</span>
+            </div>
 
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Сергей</span>
-                <span class="foto text-container__user-time-ago">(25 часов назад)</span>
+          </div>
+        </li>
+
+        <li class="photo-card">
+
+          <div class="photo-card__image">
+            <img src="/source/img/bahcha.jpg" width="280" height="180" alt="bahcha">
+          </div>
+
+          <div class="photo-card__discription">
+            <div class="photo-card__author">Сергей
+              <div class="photo-card__date">(25 часов назад)
               </div>
+            </div>
 
-              <p class="foto text-container__text">
+            <div class="photo-card__title">
+              <p>
                 Самая кубанская в мире!
               </p>
-
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
-                  <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
-                </button>
-
-                <span class="foto text-container__text-like">Нравится: 4</span>
-              </div>
-
             </div>
-          </li>
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__legs">
+            <div class="photo-card__likes">
+              <button class="photo-card__button" type="button">
+                <span class="visually-hidden">лайки</span>
+                <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
+              </button>
 
-              <img class="foto foto-item__legs" src="/source/img/foot.jpg" width="280" height="180" alt="фото ноги путешественника">
+              <span class="photo-card__text-like">Нравится: 4</span>
+            </div>
 
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Максим</span>
-                <span class="foto text-container__user-time-ago">(40 часов назад)</span>
+          </div>
+        </li>
+
+        <li class="photo-card">
+          <div class="photo-card__image">
+            <img src="/source/img/foot.jpg" width="280" height="180" alt="foot">
+          </div>
+
+          <div class="photo-card__discription">
+            <div class="photo-card__author">Максим
+              <div class="photo-card__date">(40 часов назад)
               </div>
+            </div>
 
-              <p class="foto text-container__text">
+            <div class="photo-card__title">
+              <p>
                 Где снег-то?
               </p>
-
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
-                  <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
-                </button>
-
-                <span class="foto text-container__text-like">Нравится: 150</span>
-              </div>
-
             </div>
-          </li>
 
-          <li class="foto__item">
-            <div class="foto foto-item-container__plane">
+            <div class="photo-card__likes">
+              <button class="photo-card__button" type="button">
+                <span class="visually-hidden">лайки</span>
+                <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
+              </button>
 
-              <img class="foto foto-item__plane" src="/source/img/plane.jpg" width="280" height="180" alt="фото крыло самолета">
+              <span class="photo-card__text-like">Нравится: 150</span>
+            </div>
 
-              <div class="foto text-container__name-user">
-                <span class="foto text-container__name-user-text">Надежда</span>
-                <span class="foto text-container__user-time-ago">(45 часов назад)</span>
+          </div>
+        </li>
+
+        <li class="photo-card">
+          <div class="photo-card__image">
+            <img src="/source/img/plane.jpg" width="280" height="180" alt="plane">
+          </div>
+
+          <div class="photo-card__discription">
+            <div class="photo-card__author">Надежда
+              <div class="photo-card__date">(45 часов назад)
               </div>
+            </div>
 
-              <p class="foto text-container__text">
+            <div class="photo-card__title">
+              <p>
                 Всем GM и взаимные лайки!
               </p>
-
-              <div class="foto button-container__like">
-                <button class="foto text-container-like__button" type="button">
-                  <span class="visually-hidden">лайки</span>
-                  <img class="foto button-container-like__icon-like" src="/source/img/icon/heart.svg" width="13"
-                    height="12" alt="like">
-                </button>
-
-                <span class="foto text-container__text-like">Нравится: 2560</span>
-              </div>
-
             </div>
-          </li>
 
-        </ul>
+            <div class="photo-card__likes">
+              <button class="photo-card__button" type="button">
+                <span class="visually-hidden">лайки</span>
+                <img src="/source/img/icon/heart.svg" width="13" height="12" alt="like">
+              </button>
 
-      </div>
+              <span class="photo-card__text-like">Нравится: 2560</span>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
     </section>
 
-    <section class="foto-post">
-      <div class="foto-post__wrapper">
-        <header class="foto-post__header">
-          <h2 class="visually-hidden">
-            Запостить фото
-          </h2>
-          <p class="foto-post__slogan">Затмите их всех!<br>
-            Выкладывайте все, что накопилось в<br>телефоне!</p>
-        </header>
+    <section class="photo-post">
 
-        <div class="foto-post__filter">
-          <img class="foto-post__snow-road" src="/source/img/snow-road.jpg" width="280" height="374" alt="снежная дорога">
-        </div>
+      <header class="photo-post__header">
+        <h2 class="visually-hidden">
+          Запостить фото
+        </h2>
+        <p class="photo-post__slogan">Затмите их всех!<br>
+          Выкладывайте все, что накопилось в<br>телефоне!</p>
+      </header>
 
-        <button class="foto-post__post-button" type="button">
-          <span class="foto-post__post">Запостить</span>
-        </button>
+      <form action="#" class="add-photo">
+        <label>
+          <img src="/source/img/snow-road.jpg" width="280" height="374" alt="snow-road">
+          <input type="file" hidden>
+        </label>
+      </form>
 
-        <button class="foto-post__cancellation-button" type="button">
-          <span class="foto-post__cancellation">Отмена</span>
-        </button>
+      <div class="add-photo__button-list">
+        <button class="button" type="button">Запостить</button>
+        <button class="button button--cancellation" type="button">Отмена</button>
+      </div>
 
     </section>
   </main>
